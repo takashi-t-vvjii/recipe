@@ -1,25 +1,9 @@
-
-<script>
-  function checkNijyuSubmit(){
-    var obj = document.getElementById("btnSubmit");
-    if(obj.disabled){
-      //ボタンがdisabledならsubmitしない
-      return false;
-    }else{
-      //ボタンがdisabledでなければ、ボタンをdisabledにした上でsubmitする
-      obj.disabled = true;
-      return true;
-    }
-  }
-</script>
-
 <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
   <label>
     <span class="textarea-label">食材入力</span>
     <textarea id="inputFood" class="textarea" placeholder="食材をカンマ区切りで入力してください。" formControlName="inputFood"></textarea>
   </label>
   <br>
-  <!-- 二重起動防止 https://samehack.com/angular-directive-prevent-double-click/ -->
   <button id="submit" type="submit">検索！</button>
 </form>
 <textarea class="textarea-answer" >{{ resultRecipe }}</textarea>
