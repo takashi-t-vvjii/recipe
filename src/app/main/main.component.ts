@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, FormArray } from '@angular/forms';
 
 // 環境変数
-const OPEN_AI_API_KEY='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';
+const OPEN_AI_API_KEY='sk-hGhyE7TE1tPirbajd6n7T' + '3BlbkFJDF1L9mLd5ni7eXWQptLy';
 
 @Component({
   selector: 'app-main',
